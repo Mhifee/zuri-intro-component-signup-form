@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    /* position: relative; */
+    background-image: url(images/bg-intro-mobile.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: hsl(0, 100%, 74%);
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    font-family: 'Poppins', sans-serif;
+    margin: 10px;
+    width: 100%;
+    flex-direction: row;
+}
+h1{
+    color: white;
+    font-size: 25px;
+    margin-top: 66px;
+    padding: 0 20px;
+    margin-bottom: 26px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-weight: 700;
+    line-height: 30px;
+}
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    line-height: 25px;
+}
+.card-1{
+    padding: 10px;
+    flex: 50%;
+    height: 310px;
+}
+.card-2{
+    padding: 10px;
+    flex: 50%;
+}
+.small-card{
+    margin: 20px 10px 25px 10px;
+    padding: 15px 50px;
+    box-shadow: 0 7px 0 0 hsla(0, 0%, 0%, 0.099);
+    border-radius: 10px;
+    background-color: hsl(248, 32%, 49%);
+}
+.small-card p{
+    text-align: center;
+}
+span{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    color: white;
+}
+form{
+    border: 1px;
+    border-radius: 10px;
+    box-shadow: 0 7px 0 0 hsla(0, 0%, 0%, 0.099);
+    background-color: white;
+    padding: 25px 20px 20px 20px;
+    margin: 10px;
+    height: 435px;
+}
+input{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: 1px solid rgb(242, 238, 238);
+}
+input:focus{
+    border: 1px solid hsl(248, 32%, 49%);
+    outline: none;
+}
+#button{
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border: 0;
+    box-shadow: 0 4px 0 0 hsl(153, 60%, 45%);
+    background-color: hsl(154, 59%, 51%);
+}
+
+#button:hover{
+    background-color: hsla(154, 59%, 51%, 0.7);
+}
+form .note{
+    text-align: center;
+    color: hsl(246, 25%, 77%);
+    font-size: 11px;
+    padding: 5px 18px 5px 18px;
+    line-height: 20px;
+}
+form .note a{
+    text-decoration: none;
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;
+}
+form .note a:hover{
+    text-decoration: underline;
+}
+@media only screen and (min-width:600px) and (max-width:1000px){
+    body{
+        min-height: 100vh;
+    }
+    h1{
+        font-size: 35px;
+        margin-top: 40px;
+    }
+    p{
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .card-1{
+        height: 250px;
+    }
+    .small-card{
+        padding: 20px 0px;
+    }
+    form .note{
+        font-size: 14px;
+    }
+}
+@media only screen and (min-width:1001px){
+    body{
+        min-height: 100vh;
+        background-image: url(images/bg-intro-desktop.png);
+    }
+    .card{
+        display: flex;
+        flex-direction: row;
+        width: 1050px;
+        justify-content: center;
+        align-items: center;
+    }
+    h1{
+    font-size: 45px;
+    margin-top: 50px;
+    padding: 0 11px;
+    margin-bottom: 26px;
+    text-align: left;
+    letter-spacing: px;
+    line-height: 45px;
+}
+    p{
+    font-size: 14.3px;
+    text-align: left;
+    margin: 10px;
+    padding: 10px 0;
+    }
+    .card-2{
+        padding: 0;
+        flex: 50%;
+    }
+    .small-card{
+        margin: 5px 10px 25px 10px;
+        padding: 0px 50px;
+    }
+    .small-card p{
+        text-align: center;
+        padding: 10px;
+        font-size: 14.3px;
+    }
+    form{
+        padding: 35px;
+        height: 435px;
+    }
+    #button{
+        margin-bottom: 0;
+    }    
+    form .note{
+        padding: 5px;
+    }
+}
